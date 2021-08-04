@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Open+Sans:wght@300;400;600&display=swap');
+:root{
+    /* color */
+    --theme-color:#26ac87;
+    --Light-green:#7ab55c;
+    --body-color:#ffffff;
+    --title-color:#333c4e;
+    --text-color:#7e8890;
+    --small-title-color:#b7c2ca;
+    --white-color:#ffffff;
+
+    /* font */
+    --title-font:'Montserrat', sans-serif;
+    --body-font:'Open Sans', sans-serif;
+    --biggest-fontsize: 3.5rem;
+    --subtitle-fontsize:2.75rem;
+    --special-casae: 1.125rem;
+    --normal-fontsize: 1rem;
+
+    /* font weight */
+    --normal-weight:400;
+    --title-weight:500;
+}
+
+/* base */
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: var(--body-font);
+    font-size: var(--normal-fontsize);
+    background-color: var(--body-color);
+    color: var(--text-color);
+}
+h1,h2,h3{
+    margin: 0;
+    font-family: var(--title-font);
+    font-weight: var(--normal-weight);
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+img{
+    width:100%;
+    height: auto;
+}
+button{
+    border:none;
+    font-size:var(--special-casae);
+    font-weight:var(--normal-weight) ;
+    cursor: pointer;
+}
+.container{
+    max-width: 1170px;
+    overflow: hidden;
+}
