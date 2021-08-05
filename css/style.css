@@ -12,7 +12,7 @@
     /* font */
     --title-font:'Montserrat', sans-serif;
     --body-font:'Open Sans', sans-serif;
-    --biggest-fontsize: 3.5rem;
+    --biggest-fontsize: 3rem;
     --subtitle-fontsize:2.75rem;
     --special-casae: 1.125rem;
     --normal-fontsize: 1rem;
@@ -62,20 +62,26 @@ img{
 }
 .container{
     margin: 0 auto;
-    max-width: 1170px;
+    max-width: 80%;
     overflow: hidden;
 }
 .main__wrapper{
-    position: relative;
+    position: static;
+    width:100%;
+    
+}
+.another__wrapper{
+    position: static;
+    height: 120vh;
 }
 .nav__header{
     position: relative;
     background:transparent;
     z-index: 10;
-    margin:0 auto;
 }
 .logo__box{
-    width:200px;
+    margin-top: 1rem;
+    width:100px;
 }
 nav{
     display: flex;
@@ -90,6 +96,13 @@ nav{
 }
 .nav__link{
     color: var(--white-color);
+}
+.menu__icon{
+    display: none;
+    position: absolute;
+    color: var(--white-color);
+    font-size: 2rem;
+    right: -20%;
 }
 .florel-works{
     width: 100%;
@@ -106,9 +119,9 @@ nav{
     background: linear-gradient(-12deg, #186f57 19%, #26ac87 81%);
     width:100%;
 }
-.banner__container{
+.flux__container{
     width:100%;
-    margin-top: 10rem;
+    margin-top: 10%;
     position: relative;
     display: flex;
     flex-direction: row;
@@ -120,15 +133,34 @@ nav{
 .banner__img{
     width:50%;
 }
-.banner__caption{
-    color: var(--white-color);
+.section__caption{
     width: 50%;
     
 }
+.top_subtitle{
+    color: var(--small-title-color);
+    font-size: 12px;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+}
+.section__title{
+    font-size:36px;
+    color: var(--title-color);
+}
+.section__details{
+    color:var(--text-color);
+    margin:1.5rem 0;
+}
+.banner__title{
+    color: var(--white-color);
+    font-size: var(--biggest-fontsize);
+}
 .banner__details{
     /* font-size: var(--special-casae); */
-    margin: 1.5rem 0;
+    color: var(--white-color);
+    margin: 1% 0;
     line-height: 30px;
+
 }
 .button__box{ 
     display: flex;
@@ -170,4 +202,31 @@ nav{
     width: 0;
     border-color: transparent transparent transparent #fff;
     z-index: 1;
+}
+/* .product__section{
+    position: relative;
+} */
+.green__btn{
+    color: var(--white-color);
+    background-color: var(--Light-green);
+    border: none;
+}
+/* .section__caption{
+    width:50%;
+} */
+.img__box{
+    width: 50%;
+}
+.block__cta{
+    padding: 40px 0;
+    background-color: var(--Light-green);
+}
+.cta__flux{
+    color: var(--white-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.cta__flux h1{
+    color: var(--white-color);
 }
