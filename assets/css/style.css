@@ -121,11 +121,12 @@ nav{
 }
 .flux__container{
     width:100%;
-    margin-top: 10%;
+    margin:10rem 0;
     position: relative;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
     column-gap: 5rem;
     z-index: 999;
 
@@ -229,4 +230,48 @@ nav{
 }
 .cta__flux h1{
     color: var(--white-color);
+}
+.carousel_section{
+    padding: 4rem 0;
+}
+.swipper__container{
+    width:32%;
+    margin-top:2rem;
+}
+.swiper-slide{
+    margin-right: 2%;
+}
+.swiper-pagination{
+    position: relative;
+}
+.swiper-pagination-bullet{
+    margin-left: 10px;
+}
+.swiper-pagination-bullet-active{
+    background:var(--Light-green);
+}
+.block__social{
+    display: flex;
+    justify-content: center;
+    background-color:var(--theme-color);
+    width: 100%;
+    padding: 40px 0;
+}
+.social__icon{
+    display: flex;
+    justify-content: space-between;
+    column-gap: 2rem;
+}
+.icn_grp{
+    font-size: 2.5rem;
+    opacity: 0.8;
+    color: var(--white-color);
+    transition: 0.4s;
+}
+.icn_grp:hover{
+    opacity: 1;
+    color: var(--white-color); 
+}
+.blog__pic{
+    width:300px;
 }
