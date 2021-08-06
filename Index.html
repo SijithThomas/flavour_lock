@@ -10,7 +10,7 @@
       rel="stylesheet"
     />
     <!-- Swipper js -->
-    <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css" />
     <!-- CSS -->
     <link rel="stylesheet" href="./assets/css/style.css" />
     <title>Flavourlocks</title>
@@ -18,8 +18,8 @@
   <body>
     <div class="main__wrapper">
       <div class="another__wrapper">
-        <header class="nav__header">
-          <nav class="nav container">
+        <header class="nav__header" id="nav__header">
+          <nav class="nav container" id="nav">
             <div class="logo__box">
               <a href="#" class="nav__logo">
                 <img
@@ -29,8 +29,8 @@
                 />
               </a>
             </div>
-            <div class="nav__menu">
-              <ul class="nav__list">
+            
+              <ul class="nav__list" id="nav__list">
                 <li class="nav__item">
                   <a href="#" class="nav__link">Home</a>
                 </li>
@@ -50,9 +50,9 @@
                   <a href="#" class="nav__link">Contact Us</a>
                 </li>
               </ul>
-            </div>
-            <div class="menu__icon">
-              <i class="ri-menu-line"></i>
+            
+            <div class="menu__icon" id="menu__icon">
+              <i class="ri-menu-line" id="menu__line"></i>
             </div>
           </nav>
         </header>
@@ -61,36 +61,32 @@
           <div class="container">
             <div class="flux__container">
               <div class="banner__img">
-                <img src="./assets/img/cta.png" alt="" />
+                <img src="./assets/img/cta - Copy.png" alt="" />
               </div>
               <div class="section__caption">
                 <h1 class="section__title banner__title">
-                  100% Natural<br />with no added<br />Preservatives
+                  100% Natural with no added Preservatives
                 </h1>
                 <p class="banner__details">
-                  Authentic Taste of South India Now at Door Step. Make healthy
-                  ,make healthy ,purely natural authentic ,traditional homemade
-                  food which will cater to the need of people who are away from
-                  their home and crave for mother’s home made food.
+                  Authentic Taste of South India Now at Door Step. We Make healthy
+                  , purely natural, traditional homemade food which will cater to the 
+                  need of people who are away from their home and crave for mother’s home made food.
                 </p>
                 <div class="button__box">
                   <a class="button banner__btn" href=""
                     >Products
                     <i class="ri-arrow-right-line arrow-space"></i>
                   </a>
-                  <a class="button banner__outlin-btn" href=""
+                  <!-- <a class="button banner__outlin-btn" href=""
                     >Read More
                     <i class="ri-arrow-right-line arrow-space"></i>
-                  </a>
+                  </a> -->
                 </div>
               </div>
             </div>
           </div>
-          <span
-            class="triangle triangle--top-left"
-            style="border-width: 320px 0px 0px 98vw"
-          ></span>
         </section>
+        <span class="triangle triangle--top-left"></span>
       </div>
       <section class="product__section">
         <div class="container">
@@ -130,63 +126,136 @@
               </p>
             </div>
             <div>
-                <a class="button banner__outlin-btn" href="">Read More
-                    <i class="ri-arrow-right-line arrow-space"></i>
-                </a>
+              <a class="button banner__outlin-btn" href=""
+                >Read More
+                <i class="ri-arrow-right-line arrow-space"></i>
+              </a>
             </div>
           </div>
         </div>
       </div>
       <section class="carousel_section">
-          <div class="container">
-            <div class="swipper__container new__container">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide"><img src="./assets/img/1.jpg" alt="" class="swipper__img"></div>
-                    <div class="swiper-slide"><img src="./assets/img/2.jpg" alt="" class="swipper__img"></div>
-                    <div class="swiper-slide"><img src="./assets/img/3.jpg" alt="" class="swipper__img"></div>
-                    <div class="swiper-slide"><img src="./assets/img/4.jpg" alt="" class="swipper__img"></div>
-                    <div class="swiper-slide"><img src="/assets/img/5.jpg" alt="" class="swipper__img"></div>
-                    <div class="swiper-slide"><img src="./assets/img/6.jpg" alt="" class="swipper__img"></div>
-                </div>
+        <div class="container">
+          <div class="swipper__container new__container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="./assets/img/1.jpg" alt="" class="swipper__img" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./assets/img/2.jpg" alt="" class="swipper__img" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./assets/img/3.jpg" alt="" class="swipper__img" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./assets/img/4.jpg" alt="" class="swipper__img" />
+              </div>
+              <div class="swiper-slide">
+                <img src="/assets/img/5.jpg" alt="" class="swipper__img" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./assets/img/6.jpg" alt="" class="swipper__img" />
+              </div>
             </div>
-            <div class="swiper-pagination"></div>
           </div>
+          <div class="swiper-pagination"></div>
+        </div>
       </section>
       <div class="block__social">
-          <div class="social__icon">
-              <a href="https://www.facebook.com/" class="social__link"><i class="ri-facebook-circle-fill icn_grp"></i></a>
-              <a href="https://in.pinterest.com/" class="social__link"><i class="ri-pinterest-fill icn_grp"></i></a>
-              <a href="https://www.instagram.com/" class="social__link"><i class="ri-instagram-fill icn_grp"></i></a>
-              <a href="https://twitter.com/" class="social__link"><i class="ri-twitter-fill icn_grp"></i></a>
-          </div>
+        <div class="social__icon">
+          <a href="https://www.facebook.com/" class="social__link"
+            ><i class="ri-facebook-circle-fill icn_grp"></i
+          ></a>
+          <a href="https://in.pinterest.com/" class="social__link"
+            ><i class="ri-pinterest-fill icn_grp"></i
+          ></a>
+          <a href="https://www.instagram.com/" class="social__link"
+            ><i class="ri-instagram-fill icn_grp"></i
+          ></a>
+          <a href="https://twitter.com/" class="social__link"
+            ><i class="ri-twitter-fill icn_grp"></i
+          ></a>
+        </div>
       </div>
       <section class="blog_section">
         <div class="container">
-            <div class="flux__container">
-                <div class="img__box blog__pic">
-                    <img src="./assets/img/slide2.png" alt="" />
-                  </div>
-              <div class="section__caption">
-                <h3 class="top_subtitle">OUR BLOG</h3>
-  
-                <h1 class="section__title">
-                    Love for natural and mothers<br>home made food
-                </h1>
-                <p class="section__details">
-                    To make healthy ,purely natural authentic ,traditional home made
-                    food which will cater to the need of people who are away from their home and 
-                    crave for mothers home made food
-                </p>
-                <div class="button__box">
-                  <a class="button banner__btn green__btn" href=""
-                    >View Article
-                    <i class="ri-arrow-right-line arrow-space"></i>
-                  </a>
-                </div>
+          <div class="flux__container">
+            <div class="img__box blog__pic">
+              <img src="./assets/img/slide2.png" alt="" />
+            </div>
+            <div class="section__caption">
+              <h3 class="top_subtitle">OUR BLOG</h3>
+
+              <h1 class="section__title">
+                Love for natural and mothers<br />home made food
+              </h1>
+              <p class="section__details">
+                To make healthy ,purely natural authentic ,traditional home made
+                food which will cater to the need of people who are away from
+                their home and crave for mothers home made food
+              </p>
+              <div class="button__box">
+                <a class="button banner__btn green__btn" href=""
+                  >View Article
+                  <i class="ri-arrow-right-line arrow-space"></i>
+                </a>
               </div>
             </div>
-          </div> 
+          </div>
+        </div>
       </section>
+      <div class="newsletter__section">
+        <div class="container">
+          <div class="cta__flux">
+            <div class="newsletter__details">
+              <h1 class="section__title">
+                Authentic Taste of South India<br />Now at Door Step
+              </h1>
+              <p>
+                Made from best quality rice and urad dal direct from the farm to
+                our factory.
+              </p>
+              <div class="newsletter__frm">
+                <input type="text" placeholder="Your Email" />
+                <a class="button banner__outlin-btn" href="">join Now </a>
+              </div>
+            </div>
+            <div class="newsletter__img">
+              <img src="./assets/img/newsletter.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer class="footer__section">
+        <div class="footer_floral">
+          <div class="container">
+            <div class="usefull__links">
+              <div class="color__logo">
+                <img src="./assets/img/logo.png" alt="" />
+              </div>
+              <div class="link__bx box-one">
+                <h3> Quick Search</h3>
+                <a href="#" class="footer_links"> Home</a>
+                <a href="#" class="footer_links"> About</a>
+                <a href="#" class="footer_links"> Product</a>
+                <a href="#" class="footer_links"> ID Batter</a>
+                <a href="#" class="footer_links"> Contact</a>
+              </div>
+              <div class="link__bx box-two">
+                <h3> Products</h3>
+                <a href="#" class="footer_links">Idly & Dosa Batter</a>
+              </div>
+              <div class="link__bx social">
+                <h3> Quick Search</h3>
+                <a href="#" class="footer_links"> facebook</a>
+                <a href="#" class="footer_links"> Pintrest</a>
+                <a href="#" class="footer_links"> Instagram</a>
+                <a href="#" class="footer_links"> Twitter</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
     </div>
     <!-- Swipper js -->
     <script src="./assets/js/swiper-bundle.min.js"></script>
