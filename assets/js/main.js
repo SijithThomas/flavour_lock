@@ -4,6 +4,7 @@ const navHeader=document.getElementById('nav__header');
 const nav=document.getElementById('nav');
 const navList=document.getElementById('nav__list');
 const menuLine=document.getElementById('menu__line');
+const triangle=document.querySelector('.page__triangle');
 
     let showMenu=false;
     menuBtn.addEventListener('click',toggleMenu);
@@ -15,6 +16,7 @@ const menuLine=document.getElementById('menu__line');
             navList.classList.add('show__list');
             menuLine.classList.add('ri-close-fill');
             menuLine.classList.remove('ri-menu-line')
+            triangle.classList.add('triangle__none');
     
             // Rset menu state
             showMenu=true;
@@ -23,7 +25,8 @@ const menuLine=document.getElementById('menu__line');
             nav.classList.remove('show__nav');
             navList.classList.remove('show__list');
             menuLine.classList.add('ri-menu-line');
-            menuLine.classList.remove('ri-close-fill')
+            menuLine.classList.remove('ri-close-fill');
+            triangle.classList.remove('triangle__none');
     
             // Rset menu stat
             showMenu=false;

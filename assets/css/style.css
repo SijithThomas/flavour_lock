@@ -394,6 +394,59 @@ nav{
     text-align: center;
     padding: 1.5rem;
 }
+/* ==============================About page================================ */
+.about__hero{
+    min-height: 8rem;
+    
+}
+.page__triangle{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 70%);
+}
+.page__heading{
+    text-align: center;
+    margin: 5rem 0 3rem;
+    letter-spacing: 0.3em
+}
+.top__subtitle{
+    font-size:var(--small-font-size);
+    font-weight: 500;
+    color: #b7c2ca;
+    margin-bottom: 2rem;
+}
+.page__title{
+    font-size: 36px;
+    color: var(--title-color);
+    letter-spacing: 0.1rem;
+}
+.semi__title{
+    font-size: 28px;
+    color: var(--title-color);
+    line-height: 48px;
+    margin-bottom: 24px;
+}
+.page__section{
+    display: flex;
+    flex-direction: row;
+    margin: 2rem 0;
+}
+.page__section div{
+    flex: 1;
+}
+.sec__details{
+    margin-top: 2rem;
+}
+.page__para p{
+    font-size:var(--normal-fontsize);
+    line-height: 26px;
+    margin-bottom: 30px;
+}
+.sectn__img{
+    text-align: end  ;
+}
+
+.sec__img img{
+    width: 70%;
+}
 
 /* Responsive */
 @media screen and (max-width:1160px){
@@ -474,5 +527,14 @@ nav{
         min-width: 100%;
         column-gap: 10%;
     }
-
+    /* =============About Page============= */
+    .page__section{
+        flex-direction: column;
+    }
+    .page__section div{
+        text-align: center;
+    }
+    .triangle__none{
+        clip-path: none;
+    }
 }
