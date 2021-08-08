@@ -342,13 +342,14 @@ nav{
     flex-direction: row;
     gap: 1rem;
 }
-.newsletter__frm input{
+.newsletter__frm input[type="text"]{
     border: none;
     border-radius: 25px;
     padding: 12px;
     flex-grow: 2;
     outline: none;
-    
+    font-family: var(--body-font);
+    font-size: var(--normal-fontsize);
 }
 
 /* Footer */
@@ -447,7 +448,75 @@ nav{
 .sec__img img{
     width: 70%;
 }
+.contact__form textarea{
+    resize: none;
+    overflow: hidden;
+    height: auto;
+}
+.frm__btn{
+    border: none;
+    padding: 14px 35px;
+    margin-top: 30px;
+    letter-spacing: 1px;
+    color: var(--white-color);
+    background-color: var(--Light-green);
+    outline: none;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+/* =============================Contact================================= */
+.contact__form{
+    width: 100%;
+    position: relative;
+}
+.form__boxes{
+    width:100%;
+    margin: 2rem 0;
+}
+label{
+display: block;
+margin-bottom: 1.07143rem;
+font-weight: 900;
+font-style: normal;
+font-size: 0.71429rem;
+line-height: 1;
+letter-spacing: 0.3em;
+text-transform: uppercase;
+color: #b7c2ca;
+cursor: pointer;
+}
+.form__feilds{
+    display: block;
+    width: 100%;
+    height: 50px;
+    outline: none;
+    background: #fff;
+    border-radius: 2px;
+    border: 1px solid #D5DCE2;
+    padding: 15px;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1rem;
+    line-height: 1.4;
+    color: #6f8595;
+    -webkit-appearance: none;
+    box-shadow: none;
+}
+.form__feilds:focus{
+    box-shadow: 1px 1px 25px rgb(116, 211, 255);
 
+}
+.contact__details{
+    margin:4rem;
+}
+.page__para .social__icon i{
+    color: var(--Light-green);
+}
+.cont__icon{
+    justify-content: start;
+}
 /* Responsive */
 @media screen and (max-width:1160px){
     .section__caption{
@@ -536,5 +605,9 @@ nav{
     }
     .triangle__none{
         clip-path: none;
+    }
+    /* ================Contact ======================*/
+    .contact__form,.contact__details{
+        text-align: start;
     }
 }
