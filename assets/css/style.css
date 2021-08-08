@@ -37,7 +37,6 @@ body{
     font-size: var(--normal-fontsize);
     background-color: var(--body-color);
     color: var(--text-color);
-    overflow-x: hidden;
 }
 h1,h2{
     margin: 0;
@@ -65,8 +64,6 @@ img{
 .container{
     margin: 0 auto;
     width: min(90%, 1024px);
-    /* width: 80%;
-    max-width: 1024px; */
     overflow: hidden;
 }
 .main__wrapper{
