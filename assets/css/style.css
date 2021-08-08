@@ -37,7 +37,7 @@ body{
     font-size: var(--normal-fontsize);
     background-color: var(--body-color);
     color: var(--text-color);
-    overflow: hidden;
+    overflow-x: hidden;
 }
 h1,h2{
     margin: 0;
