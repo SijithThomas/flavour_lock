@@ -64,7 +64,7 @@ img{
 }
 .container{
     margin: 0 auto;
-    width: min(90%, 1024px);
+    width: min(90%, 1440px);
     overflow: hidden;
 }
 .main__wrapper{
