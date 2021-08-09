@@ -328,12 +328,12 @@ nav{
 /* News letter */
 .newsletter__section{
     position: relative;
-    min-height: 35rem;
     background-color: var(--Light-green);
     clip-path: polygon(0 12%, 100% 0%, 100% 100%, 0 88%);
     z-index: 10;
     display: flex;
     align-items: center;
+    min-height: 35rem;
 }
 .newsletter__img{
     width: 200px;
