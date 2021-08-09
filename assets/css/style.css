@@ -535,6 +535,11 @@ cursor: pointer;
     .banner__details{
         line-height: 25px;
     }
+    .newsletter__flex{
+        margin: 8rem 0;
+        justify-content: center;
+        row-gap: 3.5rem;
+    }
 }
 @media screen and (max-width:960px){
     .nav__list{
@@ -589,11 +594,7 @@ cursor: pointer;
     .flex__wrap-order{
         flex-wrap: wrap;
     }
-    .newsletter__flex{
-        margin: 8rem 0;
-        justify-content: center;
-        row-gap: 3.5rem;
-    }
+    
     .usefull__links{
         flex-direction: column;
         justify-content: space-between;
